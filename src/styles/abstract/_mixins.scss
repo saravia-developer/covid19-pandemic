@@ -1,0 +1,42 @@
+@mixin dflex($wrap: nowrap, $row: row, $justify: stretch, $align: stretch) {
+  display: flex;
+  flex-flow: $wrap $row;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin dgrid( $columns, $size, $gap ) {
+  display: grid;
+  grid-template-columns: repeat( $columns, $size );
+  gap: $gap;
+}
+
+@mixin largeDesktop() {
+  @media screen and ( min-width: 1441px  ){
+    @content;
+  }
+}
+
+@mixin tablet(){
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin cellPhoneLarge(){
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin cellPhoneMedium(){
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin cellPhoneLarge(){
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}

@@ -1,0 +1,25 @@
+.todayRegister {
+  max-width: 500px;
+  min-width: 300px;
+  margin: 15px 0;
+
+  .currentlyCasesCovid19 {
+    border: 2px inset black;
+
+    h3 {
+      margin: 0;
+      padding: 20px 0 20px 0;
+      background-color: #42ab49;
+    }
+
+    > div {
+      padding: 10px;
+    }
+
+    .dataField {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px;
+    }
+  }
+}
