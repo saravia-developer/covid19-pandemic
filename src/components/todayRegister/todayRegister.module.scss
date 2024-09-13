@@ -1,14 +1,17 @@
 .todayRegister {
-  max-width: 500px;
+  // max-width: 500px;
   min-width: 300px;
   margin: 15px 0;
 
   .currentlyCasesCovid19 {
-    border: 2px inset black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+    margin: auto;
 
     h3 {
       margin: 0;
-      padding: 20px 0 20px 0;
+      padding: 20px 0;
       background-color: #42ab49;
     }
 
@@ -16,10 +19,23 @@
       padding: 10px;
     }
 
-    .cartOfInformation {
-      display: flex;
-      justify-content: space-between;
-      margin: 5px;
+    .details {
+      border: 2px inset black;
+      padding: 0;
+      flex: 0 1 280px;
+      margin: 10px 0;
+      // max-width: 300px;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      .fieldInformation {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+      }
     }
+
   }
 }

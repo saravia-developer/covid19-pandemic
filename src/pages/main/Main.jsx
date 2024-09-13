@@ -20,6 +20,7 @@ export default function Main() {
     .then(res => { setLastRegister(res[0]) });
   }, []);
 
+  console.log(lastRegister);
 
   return (
     <div className={styles.main}>
