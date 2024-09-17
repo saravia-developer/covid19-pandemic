@@ -28,7 +28,7 @@ export default function Cart({ info }) {
         <b>{death.toLocaleString("es-PE")}</b>
       </div>
 
-      <Link to="/">Ver más</Link>
+      <Link to={`/territory/${state.toLowerCase()}`}>Ver más</Link>
     </div>
   );
 }
