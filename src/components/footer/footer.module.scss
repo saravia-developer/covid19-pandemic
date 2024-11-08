@@ -1,0 +1,55 @@
+.footer {
+  display: grid;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 200px;
+  border-top: 1px solid black;
+  box-shadow: 3px 3px 20px 0 black;
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo contact"
+      "copyright copyright";
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(280px, 100%, 1440px);
+    margin: auto;
+
+
+    > div:nth-child(1) {
+      grid-area: logo;
+
+      img {
+        width: 200px;
+        height: 70px;
+      }
+    }
+
+    .contact-me {
+      display: grid;
+      grid-area: contact;
+
+      h4 {
+        margin: 0;
+      }
+
+      > div {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        gap: 10px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .copyright-clause {
+      grid-area: copyright;
+    }
+  }
+}

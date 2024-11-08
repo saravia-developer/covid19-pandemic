@@ -3,12 +3,8 @@
   border: 10px inset #42ab49;
   border-radius: 5px;
   padding: 10px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 
-  &:hover {
-    transform: scale(1.01);
-    background-color: #89e186;
-  }
 
   h4 {
     font-size: 18px;
@@ -19,7 +15,30 @@
     justify-content: space-between;
 
     > strong {
-      font-size: 14px
+      font-size: 14px;
+    }
+  }
+
+  > div:nth-child(5) {
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 18px;
+      margin-right: 5px;
+    }
+
+    svg {
+      height: 16px;
+    }
+
+    a, svg {
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

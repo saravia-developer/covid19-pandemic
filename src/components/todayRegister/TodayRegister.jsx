@@ -17,7 +17,6 @@ export default function TodayRegister({ lastRegister }) {
   return (
     <div className={style.todayRegister}>
       <div className={style.currentlyCasesCovid19}>
-        {/* <h2>Data for March 7, 2021</h2> */}
 
         <div className={style.details}>
           <h3>Cases</h3>
